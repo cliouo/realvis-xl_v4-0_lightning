@@ -1,9 +1,9 @@
 # Model Template for RealVisXL_V4.0_Lightning
-The model is aimed at photorealism.
+RealVisXL V4.0 Lightning is a text-to-image generation model fine-tuned on photorealistic images, designed to produce high-quality, realistic visuals efficiently. As an accelerated version of RealVisXL V4.0, it excels in creating detailed and lifelike images across various subjects. 
 
 ## Deploy RealVisXL_V4.0_Lightning using Inferless:
 
-- Deployment of SG161222/RealVisXL_V4.0_Lightning model using [Diffusers](https://github.com/huggingface/diffusers).
+- Deployment of RealVisXL_V4.0_Lightning model using [Diffusers](https://github.com/huggingface/diffusers).
 
 ---
 ## Prerequisites
