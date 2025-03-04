@@ -1,13 +1,16 @@
+import os
+os.environ["HF_HUB_ENABLE_HF_TRANSFER"]='1'
+from huggingface_hub import snapshot_download
 import torch
 from diffusers import DiffusionPipeline, DPMSolverSinglestepScheduler
 from onediffx import compile_pipe, save_pipe, load_pipe
 from io import BytesIO
 import base64
-import os
 
 class InferlessPythonModel:
     def initialize(self):
         repo_id = "SG161222/RealVisXL_V4.0_Lightning"
+        snapshot_download(repo_id=repo_id,allow_patterns=["*.safetensors"])
         
         self.pipe = DiffusionPipeline.from_pretrained( repo_id, torch_dtype=torch.float16,variant="fp16",
                                                       use_safetensors = True).to("cuda")
