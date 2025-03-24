@@ -11,7 +11,7 @@ build:
     - "onediff==1.2.0.dev202406120129"
     - "onediffx==1.2.0.dev202406120129"
     - "hf-transfer==0.1.9"
-    - "huggingface-hub==0.29.1"
+    - "transformers==4.45.2"
+    - "huggingface-hub==0.25.0"
   run:
     - "python3 -m pip install -U --pre oneflow -f https://github.com/siliconflow/oneflow_releases/releases/expanded_assets/community_cu118"
-    
