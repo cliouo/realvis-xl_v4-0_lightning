@@ -35,8 +35,6 @@ class InferlessPythonModel:
         prompt = inputs.get("prompt", "")
         negative_prompt = inputs.get("negative_prompt", "(deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, ugly, disgusting, blurry, amputation,(face asymmetry, eyes asymmetry, deformed eyes, open mouth)")
         steps = inputs.get("steps", 5)
-        randomize_seed = inputs.get("randomize_seed", True)
-        seed = inputs.get("seed", 2404)
         width = inputs.get("width", 1024)
         height = inputs.get("height", 1024)
         guidance_scale = inputs.get("guidance_scale", 1.0)
