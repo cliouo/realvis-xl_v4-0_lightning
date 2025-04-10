@@ -1,5 +1,10 @@
 build:
   cuda_version: "12.1.1"
+  system_packages:
+    - "libssl-dev"
+    - "libx11-6"
+    - "libxext6"
+    - "libgl1-mesa-glx"
   python_packages:
     - "diffusers==0.33.1"
     - "torch==2.6.0"
