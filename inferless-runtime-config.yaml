@@ -10,7 +10,7 @@ build:
     - "torch==2.6.0"
     - "hf-transfer==0.1.9"
     - "transformers==4.51.2"
-    - "huggingface-hub==0.25.0"
+    - "huggingface-hub==0.27.0"
     - "invisible-watermark==0.2.0"
     - "accelerate==1.6.0"
     - "xformers==0.0.29.post3"
